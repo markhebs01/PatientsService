@@ -9,6 +9,7 @@ namespace PatientsService.Infrastructure.Repositories
     {
 
 
+        //IN-MEMORY PATIENT DATA
         private readonly List<Patient> _patients = new()
         {
             new Patient { Id = 1, NHSNumber = "1234567890", Name = "Alice Johnson", DateOfBirth = new(1985,1,23), GPPractice = "NHS Northumbria" },
@@ -18,7 +19,12 @@ namespace PatientsService.Infrastructure.Repositories
             new Patient { Id = 5, NHSNumber = "3344556677", Name = "Emma Wilson", DateOfBirth = new(1988,5,30), GPPractice = "Newcastle Medical Centre" }
         };
 
+
+        //GET PATIENT BY ID
         public Patient? GetById(int id) => _patients.FirstOrDefault(p => p.Id == id);
+
+
+        //GET ALL PATIENTS
         public IEnumerable<Patient> GetAll() => _patients;
 
     }

@@ -2,6 +2,10 @@ using System;
 
 namespace PatientsService.Domain.Entities
 {
+
+    /// <summary>
+    /// Patient entity
+    /// </summary>
     public class Patient
     {
         public int Id { get; set; }

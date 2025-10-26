@@ -16,6 +16,13 @@ namespace PatientsService.Application.Handlers
             _repository = repository;
         }
 
+
+        /// <summary>
+        /// fetch patient by id
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
         public Task<Patient?> Handle(GetPatientByIdQuery request, CancellationToken cancellationToken)
         {
             return Task.FromResult(_repository.GetById(request.Id));

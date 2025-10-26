@@ -6,6 +6,11 @@ using Xunit;
 
 public class GetPatientByIdQueryHandlerTests
 {
+
+    /// <summary>
+    /// found case
+    /// </summary>
+    /// <returns></returns>
     [Fact]
     public async Task ReturnsPatient_WhenFound()
     {
@@ -19,6 +24,11 @@ public class GetPatientByIdQueryHandlerTests
     }
 
 
+
+    /// <summary>
+    /// Not found case
+    /// </summary>
+    /// <returns></returns>
     [Fact]
     public async Task ReturnsNull_WhenNotFound()
     {

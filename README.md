@@ -36,7 +36,7 @@ Example JSON response (200):
   "nhsNumber": "1234567890",
   "name": "Alice Johnson",
   "dateOfBirth": "1985-01-23T00:00:00",
-  "gpPractice": "London Health Centre"
+  "gpPractice": "NHS Northumbria"
 }
 ```
 
