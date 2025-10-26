@@ -22,10 +22,12 @@ namespace PatientsService.Api.Controllers
 
 
         /// <summary>
-        /// Get Patient by id
+        /// Retrieves a patient by their ID.
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">The unique ID of the patient.</param>
+        /// <returns>The patient's details if found, or a 404 Not Found.</returns>
+        /// <response code="200">Returns the patient details</response>
+        /// <response code="404">If the patient is not found</response>
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetPatientById(int id)
         {
