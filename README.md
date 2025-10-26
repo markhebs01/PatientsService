@@ -116,3 +116,11 @@ If this project were to be developed further for production use, the following e
 
 - **Integration & Unit Tests**  
   Expand test coverage to include API-level (integration) tests and richer domain logic validation.
+
+  - **Integration & Unit Tests**  
+  Expand test coverage to include API-level (integration) tests and richer domain logic validation.
+	
+- **Authentication & Authorization**  
+  Implement secure access to the API endpoints.  
+- Use **JWT Bearer tokens** or **OAuth 2.0** to authenticate clients.  
+- Apply **role-based or policy-based authorization** to control which users can access certain endpoints. 
